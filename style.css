@@ -26,6 +26,7 @@ html {
 }
 
 body {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,11 +79,213 @@ header p {
   padding: 0px 30px 32px 30px;
 }
 
+main {
+  padding: 0px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  grid-template-areas: 
+    "graphic-design"
+    "grid-group-1"
+    "grid-group-2";
+}
+
+.graphic-design {
+  grid-area: graphic-design;
+  width: 343px;
+  height: 364px;
+  background-color: var(--purple);
+  border-radius: 8px;
+  padding: 24px;
+  position: relative;
+}
+
+.graphic-design img {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.graphic-design h3 {
+  color: var(--almost-white);
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: left;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+}
+
+.ui-ux {
+  min-width: 159px;
+  height: 182px;
+  background-color: var(--yellow);
+  border-radius: 8px;
+  padding: 24px;
+  position: relative;
+  grid-column: span 1;
+}
+
+.ui-ux img {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.ui-ux h3 {
+  color: var(--almost-white);
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: left;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+}
+
+.apps {
+  min-width: 159px;
+  height: 182px;
+  background-color: var(--pink);
+  border-radius: 8px;
+  padding: 24px;
+  position: relative;
+  grid-column: span 1;
+}
+
+.apps img {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.apps h3 {
+  color: var(--almost-white);
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: left;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+}
+
+.illustrations {
+  min-width: 343px;
+  height: 158px;
+  background-color: var(--red);
+  border-radius: 8px;
+  padding: 24px;
+  position: relative;
+  grid-column: span 2;
+}
+
+.illustrations img {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.illustrations h3 {
+  color: var(--almost-white);
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: left;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+}
+
+.photography {
+  min-width: 343px;
+  height: 182px;
+  background-color: var(--green);
+  border-radius: 8px;
+  padding: 24px;
+  position: relative;
+  grid-column: span 1;
+}
+
+.photography img {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.photography h3 {
+  color: var(--almost-white);
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: left;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+}
+
+.motion-graphics {
+  min-width: 343px;
+  height: 182px;
+  background-color: var(--purple2);
+  border-radius: 8px;
+  padding: 24px;
+  position: relative;
+  grid-column: span 1;
+}
+
+.motion-graphics img {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.motion-graphics h3 {
+  color: var(--almost-white);
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: left;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+}
+
+.grid-group-1 {
+  grid-area: grid-group-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.grid-group-2 {
+  grid-area: grid-group-2;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   a {
     width: 228px;
     height: 56px;
     padding: 15px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "graphic-design grid-group-1"
+      "graphic-design grid-group-1"
+      "grid-group-2 grid-group-2";
+  }
+
+  .grid-group-2 {
+    grid-template-columns: 1fr 1fr;
+    
   }
 }
 
@@ -91,5 +294,12 @@ header p {
     width: 228px;
     height: 56px;
     padding: 15px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+      "graphic-design grid-group-1 grid-group-2"
+      "graphic-design grid-group-1 grid-group-2";
   }
 }
