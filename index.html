@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
   
   <title>Frontend Mentor | Single-page design portfolio</title>
 </head>
@@ -64,6 +65,27 @@
     </section>
     <section class="slides">
       <h2>My Work</h2>
+      <section class="slide-show-container">
+        <div class="slide">
+          <img src="assets/image-slide-1.jpg" alt="Slide 1">
+        </div>
+        <div class="slide">
+          <img src="assets/image-slide-2.jpg" alt="Slide 2">
+        </div>
+        <div class="slide">
+          <img src="assets/image-slide-3.jpg" alt="Slide 3">
+        </div>
+        <div class="slide">
+          <img src="assets/image-slide-4.jpg" alt="Slide 4">
+        </div>
+        <div class="slide">
+          <img src="assets/image-slide-5.jpg" alt="Slide 5">
+        </div>
+      </section>
+      <div class="buttons">
+        <button class="prev" onclick="changeSlide(-1)"><img src="assets/icon-arrow-left.svg" alt="Previous"></button>
+        <button class="next" onclick="changeSlide(1)"><img src="assets/icon-arrow-right.svg" alt="Next"></button>
+      </div>
     </section>
     <section>
       <h2>Book a call with me</h2>

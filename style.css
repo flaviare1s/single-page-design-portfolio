@@ -318,11 +318,58 @@ picture {
   background-color: var(--yellow);
 }
 
+.slides h2 {
+  color: var(--almost-black);
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 0 16px 32px 16px;
+}
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  background-color: var(--almost-black);
+  border: none;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.prev:hover, .next:hover {
+  background-color: var(--purple);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+  margin-bottom: 100px;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   a {
     width: 228px;
     height: 56px;
-    padding: 15px;
+    padding: 18px;
   }
 
   .grid {
@@ -343,7 +390,7 @@ picture {
   a {
     width: 228px;
     height: 56px;
-    padding: 15px;
+    padding: 18px;
   }
 
   .grid {
