@@ -291,6 +291,13 @@ picture {
   width: 100%;
 }
 
+.info-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .info h2 {
   color: var(--almost-black);
   font-size: 2.6rem;
@@ -320,7 +327,7 @@ picture {
 
 .slides h2 {
   color: var(--almost-black);
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   font-weight: 700;
   text-align: center;
   padding: 0 16px 32px 16px;
@@ -403,10 +410,26 @@ picture {
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    font-size: 4.4rem;
+  }
+
+  header p {
+    font-size: 1.8rem;
+  }
+
   a {
     width: 228px;
     height: 56px;
     padding: 18px;
+  }
+
+  nav {
+    padding: 34px 40px 64px 40px;
+  }
+
+  header h1, header p {
+    max-width: 690px;
   }
 
   .grid {
@@ -420,6 +443,63 @@ picture {
   .grid-group-2 {
     grid-template-columns: 1fr 1fr;
     
+  }
+
+  .info {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+  }
+
+  .info-text {
+    max-width: 339px;
+    align-items: flex-start;
+  }
+
+  .info h2, .info p {
+    text-align: left;
+    padding-left: 0px;
+  }
+
+  .info h2 {
+    font-size: 3.2rem;
+  }
+
+  .info p {
+    font-size: 1.8rem;
+  }
+
+  picture {
+    width: 364px;
+    position: relative;
+  }
+
+  .info img {
+    position: absolute;
+    left: -65px;
+    top: 30px;
+  }
+
+  .slides h2 {
+    font-size: 3.2rem;
+  }
+
+  .call {
+    padding: 56px 75px 64px 75px;
+    margin: 0 24px;
+  }
+
+  .call h2 {
+    font-size: 3.2rem;
+  }
+
+  .call p {
+    font-size: 1.8rem;
+  }
+
+  #footer {
+    padding: 56px 40px;
   }
 }
 
