@@ -53,6 +53,10 @@ header a, footer a {
   color: var(--almost-white);
 }
 
+header a:hover, footer a:hover {
+  background-color: var(--purple);
+}
+
 .logo {
   width: 48px;
 }
@@ -308,6 +312,10 @@ picture {
   background-color: var(--red);
   color: var(--almost-white);
   margin-top: 32px;
+}
+
+.info a:hover {
+  background-color: var(--yellow);
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
