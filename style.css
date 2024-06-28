@@ -516,4 +516,71 @@ picture {
       "graphic-design grid-group-1 grid-group-2"
       "graphic-design grid-group-1 grid-group-2";
   }
+
+  .graphic-design {
+    width: 354px;
+  }
+  
+  .ui-ux {
+    min-width: 164px;
+  }
+  
+  .ui-ux img {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+  }
+  
+  .apps {
+    min-width: 164px;
+  }
+  
+  .illustrations {
+    min-width: 354px;
+  }
+  
+  .photography {
+    min-width: 354px;
+  }
+  
+
+  .motion-graphics {
+    min-width: 354px;
+    height: 158px;
+  }
+
+  .info {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 125px;
+    max-width: 1110px;
+    margin-bottom: 88px;
+  }
+
+  .info-text {
+    max-width: 540px;
+    align-items: flex-start;
+  }
+
+  .info h2, .info p {
+    text-align: left;
+    padding-left: 0px;
+  }
+
+  .info h2 {
+    font-size: 4rem;
+  }
+
+  .info p {
+    line-height: 28px;
+  }
+
+  picture {
+    width: 445px;
+  }
+
+  .info img {
+    width: 445px;
+  }
 }
