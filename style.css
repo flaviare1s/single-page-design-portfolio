@@ -331,7 +331,6 @@ main {
 .slide-show-container {
   display: flex;
   flex-direction: row;
-  overflow: visible;
   position: relative;
   width: 100vw;
   gap: 15px;
@@ -475,6 +474,10 @@ main {
     font-size: 3.2rem;
   }
 
+  .slide-show-container {
+    gap: 30px;
+  }
+
   .slide img {
     width: 540px;
     height: 360px;
@@ -584,6 +587,10 @@ main {
 
   .slides h2 {
     font-size: 4rem;
+  }
+
+  .slide-show-container {
+    gap: 30px;
   }
 
   .slide img {
