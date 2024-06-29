@@ -330,19 +330,22 @@ main {
 }
 
 .slideshow-container {
+  display: flex;
+  overflow: visible;
   position: relative;
   width: 100%;
   max-width: 600px;
   margin: auto;
 }
 
-.slide {
+/* .slide {
   display: none;
-}
+} */
 
 .slide img {
   width: 100%;
   height: auto;
+  border-radius: 15px;
 }
 
 .prev, .next {
@@ -575,6 +578,10 @@ main {
   .info img {
     width: 445px;
     height: 445px;
+  }
+
+  .slides h2 {
+    font-size: 4rem;
   }
 
   .call {
