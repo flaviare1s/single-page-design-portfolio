@@ -1,23 +1,33 @@
-let slideIndex = 2;
-showSlide(slideIndex);
+let slideIndex = 2; // Começar com o terceiro slide
 
 function changeSlide(n) {
-  showSlide(slideIndex += n);
+  slideIndex += n;
+  showSlide(slideIndex);
 }
 
 function showSlide(n) {
   const slides = document.getElementsByClassName("slide");
-  
-  if (n >= slides.length) {
+  const totalSlides = slides.length;
+
+  if (n >= totalSlides) {
     slideIndex = 0;
   }
   if (n < 0) {
-    slideIndex = slides.length - 1;
+    slideIndex = totalSlides - 1;
   }
-  
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+
+  const offset = -slideIndex * (slides[0].offsetWidth + 20) + (document.querySelector('.slide-show-container').offsetWidth / 2 - slides[0].offsetWidth / 2);
+
+  document.querySelector('.slide-show-container').style.transform = `translateX(${offset}px)`;
+
+  for (let i = 0; i < totalSlides; i++) {
+    slides[i].style.display = "block";
   }
-  
-  slides[slideIndex].style.display = "block";  
 }
+
+document.querySelector('.prev').addEventListener('click', () => changeSlide(-1));
+document.querySelector('.next').addEventListener('click', () => changeSlide(1));
+
+window.addEventListener('load', () => showSlide(slideIndex));
+window.addEventListener('resize', () => showSlide(slideIndex)); // Reajustar ao redimensionar a janela
+
