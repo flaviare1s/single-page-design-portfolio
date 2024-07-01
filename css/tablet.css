@@ -1,0 +1,102 @@
+@media (min-width: 768px) and (max-width: 1200px) {
+  h1 {
+    font-size: 4.4rem;
+  }
+
+  .logo {
+    width: 64px;
+  }
+
+  header p {
+    font-size: 1.8rem;
+  }
+
+  a {
+    width: 228px;
+    height: 56px;
+    padding: 18px;
+  }
+
+  nav {
+    padding: 34px 0px 64px 0px;
+  }
+
+  header h1, header p {
+    max-width: 690px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "graphic-design grid-group-1"
+      "graphic-design grid-group-1"
+      "grid-group-2 grid-group-2";
+  }
+
+  .grid-group-2 {
+    grid-template-columns: 1fr 1fr;
+    
+  }
+
+  .info {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+  }
+
+  .info-text {
+    max-width: 339px;
+    align-items: flex-start;
+  }
+
+  .info h2, .info p {
+    text-align: left;
+    padding-left: 0px;
+  }
+
+  .info h2 {
+    font-size: 3.2rem;
+  }
+
+  .info p {
+    font-size: 1.8rem;
+  }
+
+  .info img {
+    width: 364px;
+    height: 364px;
+    margin-left: -100px;
+  }
+
+  .slides h2 {
+    font-size: 3.2rem;
+  }
+
+  .slide-show-container {
+    gap: 30px;
+  }
+
+  .slide img {
+    width: 540px;
+    height: 360px;
+    border-radius: 10px;
+  }
+
+  .call {
+    padding: 56px 75px 64px 75px;
+    margin: 0 24px;
+  }
+
+  .call h2 {
+    font-size: 3.2rem;
+  }
+
+  .call p {
+    font-size: 1.8rem;
+  }
+
+  #footer {
+    padding: 56px 40px;
+  }
+}

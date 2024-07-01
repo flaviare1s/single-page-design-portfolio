@@ -1,0 +1,149 @@
+@media (min-width: 1200px) {
+  a {
+    width: 228px;
+    height: 56px;
+    padding: 18px;
+  }
+
+  .logo {
+    width: 64px;
+  }
+
+  h1 {
+    font-size: 5.6rem;
+    padding: 32px 0px 23px 0px;
+  }
+
+  header p {
+    font-size: 1.8rem;
+    max-width: 730px;
+    text-align: center;
+    margin-bottom: 80px;
+    padding: 0px 30px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+      "graphic-design grid-group-1 grid-group-2"
+      "graphic-design grid-group-1 grid-group-2";
+  }
+
+  nav {
+    width: 1110px;
+    padding: 34px 0px;
+  }
+
+  .graphic-design {
+    width: 354px;
+  }
+  
+  .ui-ux {
+    min-width: 164px;
+  }
+  
+  .ui-ux img {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+  }
+  
+  .apps {
+    min-width: 164px;
+  }
+  
+  .illustrations {
+    min-width: 354px;
+  }
+  
+  .photography {
+    min-width: 354px;
+  }
+  
+
+  .motion-graphics {
+    min-width: 354px;
+    height: 158px;
+  }
+
+  .info {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 125px;
+    max-width: 1110px;
+    margin-bottom: 88px;
+  }
+
+  .info-text {
+    max-width: 540px;
+    align-items: flex-start;
+  }
+
+  .info h2, .info p {
+    text-align: left;
+    padding-left: 0px;
+  }
+
+  .info h2 {
+    font-size: 4rem;
+  }
+
+  .info p {
+    line-height: 28px;
+  }
+
+  .info img {
+    width: 445px;
+    height: 445px;
+  }
+
+  .slides h2 {
+    font-size: 4rem;
+  }
+
+  .slide-show-container {
+    gap: 30px;
+  }
+
+  .slide img {
+    width: 540px;
+    height: 360px;
+    border-radius: 10px;
+  }
+
+  .call {
+    width: 1111px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 182px;
+    padding: 80px 65px;
+    text-align: left;
+  }
+
+  .call h2 {
+    font-size: 4rem;
+    text-align: left;
+  }
+
+  .call p {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+
+  .call-text {
+    max-width: 540px;
+  }
+
+  #footer {
+    width: 1110px;
+    padding: 56px 0px 64px 0px;
+  }
+}
