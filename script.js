@@ -1,3 +1,6 @@
+const prevBtn = document.querySelector('#prev')
+const nextBtn = document.querySelector('#next')
+
 let slideIndex = 2;
 
 function changeSlide(n) {
@@ -25,8 +28,8 @@ function showSlide(n) {
   }
 }
 
-document.querySelector('.prev').addEventListener('click', () => changeSlide(-1))
-document.querySelector('.next').addEventListener('click', () => changeSlide(1))
+prevBtn.addEventListener('click', () => changeSlide(-1))
+nextBtn.addEventListener('click', () => changeSlide(1))
 
 window.addEventListener('load', () => showSlide(slideIndex))
 window.addEventListener('resize', () => showSlide(slideIndex))

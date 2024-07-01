@@ -319,7 +319,7 @@ main {
   border-radius: 15px;
 }
 
-.prev, .next {
+#prev, #next {
   cursor: pointer;
   background-color: var(--almost-black);
   border: none;
