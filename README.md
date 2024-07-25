@@ -15,7 +15,7 @@ Os usuários devem ser capazes de:
 
 - Visualizar o layout otimizado do site dependendo do tamanho da tela do dispositivo.
 - Ver estados de hover para todos os elementos interativos na página.
-- Navegar pelo slider usando o mouse/trackpad ou teclado.
+- Navegar pelo slider.
 
 ## Comportamento Esperado
 
