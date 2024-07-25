@@ -1,9 +1,9 @@
 # Single-page Design Portfolio
 
 
-## Bem-vindo! 👋
+## Bem-vindo(a)! 👋
 
-Obrigado por conferir este desafio premium de front-end do Frontend Mentor. Este projeto visa ajudar a aprimorar minhas habilidades em HTML, CSS (principalmente GRID) e JavaScript, criando um portfólio de design com slides em uma única página.
+Este projeto, mais um desafio Frontend Mentor concluído, visa ajudar a aprimorar minhas habilidades em HTML, CSS (principalmente GRID) e JavaScript, desenvolvendo um portfólio de design com slides em uma única página.
 
 ## Sobre o Projeto
 
